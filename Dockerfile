@@ -8,6 +8,7 @@ RUN apk --update add \
     linux-headers \
     libaio-dev \
     zlib-dev \
+    libzip-dev \
     curl \
     git \
     subversion \
