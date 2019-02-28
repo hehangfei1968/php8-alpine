@@ -34,7 +34,6 @@ RUN apk --update add \
     docker-php-ext-install gd && \
     docker-php-ext-enable opcache && \
     pecl install redis && \
-    docker-php-ext-enable mcrypt && \
     apk del build-base \
     linux-headers \
     libaio-dev \
