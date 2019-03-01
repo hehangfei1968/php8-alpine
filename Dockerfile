@@ -33,7 +33,7 @@ RUN apk --update add \
     pecl install redis && \
     docker-php-ext-enable imagick && \
     docker-php-ext-install gd && \
-    docker-php-ext-install redis && \
+    docker-php-ext-enable redis && \
     docker-php-ext-enable opcache && \
     apk del build-base \
     linux-headers \
