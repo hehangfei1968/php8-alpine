@@ -30,10 +30,11 @@ RUN apk --update add \
     docker-php-ext-install bcmath zip bz2 pdo_mysql mysqli simplexml opcache sockets mbstring pcntl xsl pspell && \
     docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
     pecl install imagick && \
+    pecl install redis && \
     docker-php-ext-enable imagick && \
     docker-php-ext-install gd && \
+    docker-php-ext-install redis && \
     docker-php-ext-enable opcache && \
-    pecl install redis && \
     apk del build-base \
     linux-headers \
     libaio-dev \
