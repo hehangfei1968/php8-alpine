@@ -7,5 +7,6 @@ RUN docker-php-ext-install mysqli \
     && mkdir -p /usr/src/php/ext \
     && mv phpredis-3.1.3 /usr/src/php/ext/redis \
     && docker-php-ext-install redis \
-    && docker-php-ext-install pcntl
+    && docker-php-ext-install pcntl \
+    && docker-php-ext-install opcache
 CMD php-fpm
