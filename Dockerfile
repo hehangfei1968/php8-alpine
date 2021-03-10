@@ -1,4 +1,4 @@
-FROM php:7-fpm
+FROM php:7-fpm-alpine
 RUN docker-php-ext-install mysqli \
     && docker-php-ext-install pdo_mysql \
     && curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/3.1.3.tar.gz \
